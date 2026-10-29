@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #06080f;
+    color: #f8fafc;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Range Sliders for Telemetry Controls */
+input[type="range"].telemetry-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].telemetry-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+input[type="range"].telemetry-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #06b6d4;
+  border: 2px solid #0f172a;
+  margin-top: -5px;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+input[type="range"].telemetry-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.18);
+  background: #22d3ee;
+}
+
+input[type="range"].telemetry-slider:focus-visible {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+}
