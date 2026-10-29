@@ -1,0 +1,6 @@
+{
+  "name": "Helios Orbital Lab",
+  "description": "Interactive 3D solar system simulator with procedural planetary rendering, Keplerian orbital mechanics, dynamic lighting, planet-focused camera tracking, and custom system configuration management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
